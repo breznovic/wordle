@@ -6,7 +6,7 @@ import { useState, createContext, useEffect } from "react";
 import GameOver from "./components/GameOver";
 import * as React from "react";
 
-/* type AttemptType = {
+type AttemptType = {
   attempt: number;
   letter: number;
 };
@@ -28,7 +28,7 @@ type ValueType = {
   setDisabledLetters: string;
   disabledLetters: string;
   gameOver: GameOverType;
-}; */
+};
 
 export const AppContext = createContext();
 
