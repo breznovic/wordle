@@ -6,30 +6,6 @@ import { useState, createContext, useEffect } from "react";
 import GameOver from "./components/GameOver";
 import * as React from "react";
 
-type AttemptType = {
-  attempt: number;
-  letter: number;
-};
-
-type GameOverType = {
-  gameOver: boolean;
-  guessedWord: boolean;
-};
-
-type ValueType = {
-  board: Array<string>;
-  setBoard: Array<string>;
-  currAttempt: AttemptType;
-  setCurrAttempt: AttemptType;
-  correctWord: string;
-  onSelectLetter: () => void;
-  onDelete: () => void;
-  onEnter: () => void;
-  setDisabledLetters: string;
-  disabledLetters: string;
-  gameOver: GameOverType;
-};
-
 export const AppContext = createContext();
 
 function App() {
